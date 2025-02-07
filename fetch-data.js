@@ -31,7 +31,7 @@ async function fetchUserData() {
         dataContainer.textContent = 'Failed to load user data.';
     }
 };
-
+//eventListener which ensures data fetching logic runs once the HTML document has fully loaded
 document.addEventListener('DOMContentLoaded', function () {
     fetchUserData();
 })
